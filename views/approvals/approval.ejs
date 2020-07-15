@@ -1,0 +1,49 @@
+<div class="form-group"> 
+      <h3 class="text-center mb-3">  Approval Details  </h3>
+
+      <form action="/" method="post">
+              <div class="col-md-6">
+            <label> Approval Type</label>
+            <input type="text" value = "<%= objUser2.approval_type__c %> " name= "approval_type" class="form-control"/>
+        </div>
+        <div class="col-md-6">
+                <label >Asset Requisition Form</label>
+            <input type="text" value = "<%= objUser2.assetname %>" name="asset_requistion_form" class="form-control" 
+            />
+          </div>
+          <div class="col-md-6">
+            <label >Status</label>
+            <input type="text" name="status" value="<%= objUser2.status__c %>" class="form-control"  
+            />
+          </div>
+          <div class="col-md-6">
+            <label>Submitted By Salesforce User</label>
+            <input type="text" name="owner_id" value="<%= objUser2.submitted_by_salesforce_user__c
+            %>" class="form-control" 
+            />
+            </div> 
+            <div class="col-md-6">
+                <label>Approver's Email </label>
+                <input type="textarea" name="appemails" value="<%= objUser2.approver_s_emails__c %>" class="form-control" 
+                />
+              </div>
+              
+              <div class="col-md-6">
+                <label>Approval Comment </label>
+                <input type="textarea" name="appcomment" value="<%= objUser2.approval_comment__c %>" class="form-control" 
+                />
+              </div> 
+              <div class="col-md-6">
+                <label>Submitted By Heroku User </label>
+                <input type="text" name="herokuuser" value="<%= objUser2.submitted_by_heroku_user__c %>" class="form-control" 
+                />
+              </div> 
+                    
+    <center><button type="submit" class="btn btn-info">Back</button> 
+    </button></center>    
+         
+      </form>
+    </div>
+  </div>
+</div>
+ 
